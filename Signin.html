@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/jpg" href="Anh/logo1.png">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=581700296110686&autoLogAppEvents=1" nonce="LTfiYWdy"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            border:none;
+            font-family: 'Open Sans', sans-serif;
+        }
+        body {
+            overflow: hidden;
+            background-image: url("./Web Switzerland/bg.jpg");
+
+        }
+        .to {
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: minmax(100px,auto);
+        }
+        
+        .form {
+            border: 1px solid #80808000;
+            grid-column: 6/9;
+            grid-row: 1;
+            height: 530px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            border-radius: 15px;
+            box-shadow: 0px 0px 14px 0px grey;
+            background-color: white;
+            margin-top: 70px;
+        }
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        h4{
+            color: rgb(161, 161, 161);
+        }
+        
+        label {
+            margin-left: -126px;
+            display: block;
+            font-weight: lighter;
+        
+        }
+        input{
+            display: block;
+            border-bottom: 2px solid #00BCD4;
+            margin-top: 6px;
+            margin-bottom: 10px;
+            outline-style: none;
+        }
+        input[type="text"] {
+            padding: 5px;
+            width: 70%;
+        }
+        
+        input#submit {
+            padding: 7px;
+            width: 50%;
+            border-radius: 10px;
+            border: none;
+            position: absolute;
+            bottom: 10px;
+            cursor: pointer;
+            background: linear-gradient(to right, #fc00ff, #00dbde);
+        }
+        input#submit:hover{
+        
+            background: linear-gradient(to right, #fc466b, #3f5efb); 
+        }
+    </style>
+</head>
+<body>
+    <div class="to">
+        <div class="form">
+            <h2>Join Travel Swiss</h2>
+            <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width="">
+            </div><br>
+            <h4>OR</h4><br>
+            <label style="margin-left: -150px;">User Name</label>
+            <input type="text" name="hoten">
+            <label>Phone number</label>
+            <input type="text" name="sdt">    
+            <label style="margin-left: -180px;">Email</label>
+            <input type="text" name="email">
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+            </label>
+            <input id="submit" type="submit" name="submit" value="Sign up">
+        </div>                
+    </div>
+</body>
+</html>
